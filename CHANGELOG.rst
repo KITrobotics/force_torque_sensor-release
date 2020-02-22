@@ -2,20 +2,34 @@
 Changelog for package force_torque_sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.3 (2020-02-22)
+------------------
+* Changelog
+* Contributors: Denis Štogl
+
+0.9.2 (2020-02-22)
+------------------
+* Corrected changelogs and release data
+
 0.9.0 (2020-02-22)
 ------------------
 * All dependencies are released
 * Changes:
-  - UR calibration
-  - Use consistanant naming: calibration -> calacualte_offsets
-  - Rename 'Recalibrate' service to 'CalculateOffsetsWithoutGravity' -> it calculates offsets but removing gravity. This is usefull for manipulators.
-  - Refractoring and using global variables toward real-time performance.
-* - Code refraction
-  - Added new output with data after all filters
-  - Filters are now not activated if they are not defined
-  - Added mutex between two threads of reading data from the sensor and providing them for other components.
-  - Additinal debugging output when regarding setup of the SensorHandle
+
+  * UR calibration
+  * Use consistanant naming: calibration to calacualte\_offsets
+  * Rename 'Recalibrate' service to 'CalculateOffsetsWithoutGravity': it calculates offsets but removing gravity. This is usefull for manipulators.
+  * Refractoring and using global variables toward real-time performance.
+  
+* Code refraction
+
+  * Added new output with data after all filters
+  * Filters are now not activated if they are not defined
+  * Added mutex between two threads of reading data from the sensor and providing them for other components.
+  * Additinal debugging output when regarding setup of the SensorHandle
+  
 * Add changes from melodic in to kinetic (`#22 <https://github.com/KITrobotics/force_torque_sensor/issues/22>`_)
+
   * Added travis config for melodic
   * Added Melodic in overview
   * Scenario update melodic (`#7 <https://github.com/KITrobotics/force_torque_sensor/issues/7>`_)
@@ -28,13 +42,15 @@ Changelog for package force_torque_sensor
   * Update .travis.yml
   * Update .travis.rosinstall
   * Added joystick and keyboard (`#8 <https://github.com/KITrobotics/force_torque_sensor/issues/8>`_)
-  * generated changelog
-  * Contributors: Daniel Azanov, Denis Štogl, Florian Aumann, Gilbert Groten (GDwag)
+  * generated changelog 
+* Contributors: Daniel Azanov, Denis Štogl, Florian Aumann, Gilbert Groten (GDwag)
     
+
 0.8.1 (2018-12-11)
 ------------------
 * Added joystick and keyboard (#8)
 * Scenario update melodic (#7)
+
   * added scenario parameter
   * fixed wrong variable names
   * Added service for setting offets from outside
@@ -44,6 +60,7 @@ Changelog for package force_torque_sensor
   * Corrected error with doTranform for wrenches and corrected package.xml with package meta data.
   * Update .travis.yml
   * Update .travis.rosinstall
+
 * Added Melodic in overview
 * Added travis config for melodic
 
@@ -73,4 +90,4 @@ Changelog for package force_torque_sensor
 * Moved class loader to handle
 * Added namespaces
 * First working version
-* Contributors: Denis Štogl, IIROB Praktikum 3, Timo Leitritz
+* Contributors: Denis Štogl, Timo Leitritz
